@@ -34,73 +34,42 @@
 
 // 6 - Challenge 
 // Prompt user to enter two numbers and print the result of the two numbers multiplied together into the console. Use string interpolation to print a nicely formatted ouput to the user.
-let num1 = prompt("Enter a number");
-let num2 = prompt("Enter another number");
+// let num1 = prompt("Enter a number");
+// let num2 = prompt("Enter another number");
 
 // num1 = Number(num1);
 // num2 = Number(num2);
 
-let answer = (num1 * num2);
+// let answer = (num1 * num2);
 
 // console.log(`The answer is ${answer}`)
 
-document.getElementById("answer").innerHTML = `The answer is ${answer}`
+// document.getElementById("answer").innerHTML = `The answer is ${answer}`
 
 // 7 - Challenge
 // What if a user enters a value that is *not* a number in step 6? 
 // How can you validate the user input to make sure only a number can be entered? 
 // Note: This problem is not within scope of this unit. You will need to use Google!
 
-// let num1 = prompt("Enter a number");
-// let num2 = prompt("Enter another number");
-// num1 = Number(num1);
-// num2 = Number(num2);
+let num1 = prompt("Enter a number");
+let num2 = prompt("Enter another number");
+num1 = Number(num1);
+num2 = Number(num2);
 
-// if (isNaN(num1, num2)) {
-//    alert("Please type numbers into both fields");
-// }  else {
-//     alert("Thank you!");
-// }
+if (isNaN(num1, num2)) {
+   alert("Please type numbers into both fields");
+}  else {
+    alert("Thank you!");
+}
 
-// // if (isNaN(num2)) {
-// //    alert("Please type a number");
-// // } else {
-// //    alert("Thank you!")
-// // }
+let answer = (num1 * num2);
 
-// let answer = (num1 * num2);
-// // console.log(answer);
+let finalAnswer= `The answer is ${answer}`;
+let badAnswer = `You've reached a black hole, toss the whole equation away!`;
 
-// // console.log(`The answer is ${answer}`)
+if (isNaN(answer)) {
+    document.getElementById("answer").innerHTML = badAnswer;
+} else {
+    document.getElementById("answer").innerHTML = finalAnswer;
+}
 
-// let finalAnswer= `The answer is ${answer}`;
-// let badAnswer = `You've reached a black hole, toss the whole equation away!`;
-
-// if (isNaN(answer)) {
-//     document.getElementById("answer").innerHTML = badAnswer;
-// } else {
-//     document.getElementById("answer").innerHTML = finalAnswer;
-// }
-
-// let num1 = prompt("Enter a number");
-// let num2 = prompt("Enter another number");
-
-// if (isNaN(num1, num2)) {
-//    alert("Please type numbers into both fields");
-// }  else {
-//     alert("Thank you!");
-// }
-
-// num1 = Number(num1);
-// num2 = Number(num2);
-
-// let answer = (num1 * num2);
-
-// let finalAnswer= `The answer is ${answer}`;
-// let badAnswer = `You've reached a black hole, toss the whole equation away!`;
-
-// if (isNaN(answer)) {
-//     document.getElementById("answer").innerHTML = badAnswer;
-// } else {
-//     document.getElementById("answer").innerHTML = finalAnswer;
-// }

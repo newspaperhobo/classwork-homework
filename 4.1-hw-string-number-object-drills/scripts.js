@@ -78,8 +78,9 @@ console.log(jpNum);
 //Search the string "Fighting Evil by Moonlight" for "Moonlight" content using the correct method.
 //8 Code Answer:
 
-// let moonlight = "Fighting Evil by Moonlight";
-// let moonlightSearch = indexOf(mo)
+let moonlight = "Fighting Evil by Moonlight";
+let moonlightSearch = moonlight.indexOf("Moonlight");
+console.log(moonlightSearch);
 
 //8 Result Answer:
 
@@ -146,13 +147,13 @@ console.log(randomRange14to21);
 
 //14 Code Answer:
 let today = new Date();
-console.log(today);
+// console.log(today);
 let month =  "0" + (today.getMonth() + 1);
-console.log(month);
+// console.log(month);
 let day = today.getDate().toString();
-console.log(day);
+// console.log(day);
 let year = today.getFullYear().toString();
-console.log(year);
+// console.log(year);
 let currentDate = `${month}/${day}/${year}`;
 console.log(currentDate);
 
