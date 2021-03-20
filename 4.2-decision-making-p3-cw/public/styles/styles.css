@@ -1,0 +1,27 @@
+.container {
+    width: 60%;
+    margin: 30px auto;
+    font-size: 1.4em;
+}
+
+h1 {
+    color: #CB3623;
+    text-align: center;
+}
+
+a:link,
+a:visited {
+    color: #CB3623;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CB3623;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: #CB3623;
+    color: #ffffff;
+    text-decoration: underline;
+}
