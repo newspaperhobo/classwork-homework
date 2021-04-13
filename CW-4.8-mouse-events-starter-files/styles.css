@@ -1,0 +1,55 @@
+h1 {
+    margin: 25px;
+}
+
+.button-start {
+    width: 300px;
+    height: 100px;
+    border: black 2px solid;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    margin: 25px;
+    background-color: yellow;
+}
+
+.button-clicked {
+    width: 300px;
+    height: 100px;
+    border: black 2px solid;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    margin: 25px;
+    background-color: darkgreen;
+}
+
+.hidden-element {
+    display: none;
+}
+
+.revealed-element {
+    display: block;
+}
+
+.container-start {
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    border: black 2px solid;
+    padding: 25px;
+    margin: 25px;
+    font-size: 1.2rem;
+    background-color: darkgreen;
+    color: white;
+}
+
+.container-changed {
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    border: black 2px solid;
+    padding: 25px;
+    margin: 25px;
+    font-size: 1.2rem;
+    background-color: yellow;
+    color: black;
+}
