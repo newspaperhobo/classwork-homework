@@ -52,12 +52,14 @@ let body = document.body;
     // When the 'j' button is pressed, the following code will run:
         // let soundB = new Audio('./sounds/piano-B.mp3') 
         // soundB.play();
-    
-    // When the 'k' button is pressed, the following code will run:
+        
+        // When the 'k' button is pressed, the following code will run:
         // let soundC2 = new Audio('./sounds/piano-C2.mp3') 
         // soundC2.play();
-
-    // These lines of code are doing the following: creating a new Audio element in the DOM by assigning it to a variable and linking it with a specific audio file in the sounds folder, and then using that audio element's built-in method of play() to play the sound.  
+        
+        // These lines of code are doing the following: creating a new Audio element in the DOM by assigning it to a variable and linking it with a specific audio file in the sounds folder, and then using that audio element's built-in method of play() to play the sound.  
+        
+let imgArray = document.querySelectorAll("img");
 
 const playSound = function(e) {
     if (e.key === "a") {
@@ -109,6 +111,7 @@ const playSound = function(e) {
 
 // Step 3: Write an event listener to bind the target to a keyboard event and the event handler function. 
 
+body.addEventListener("keydown", playSound)
 
 
 
@@ -119,14 +122,17 @@ const playSound = function(e) {
 // BONUS: See if you can write scripts that will highlight the proper image's div when the keyboard key is pressed down and unhighlight it when the keyboard key is released. This can be done by changing the class names of the divs that contain an image in the HTML file. There is a class name and styling associated with that class name already created in the CSS file. 
     // Example: When the user presses down on the 'a' key on their computer keyboard, the image of the first key in the browser will be highlighted in yellow. When the 'a' key is released, the image will go back to having no discernable highlighting.
 
-let imgArray = document.querySelectorAll("img");
-body.addEventListener("keydown", playSound)
+
+for (i = 0; i < imgArray.length; i++) {
+    imgArray[i].className = "key-image"
+}
+console.log(imgArray);
+
 
 const removeHighlight = function() {
-        let imgArray = document.querySelectorAll("img");
         for (i = 0; i < imgArray.length; i++) {
-        if (imgArray[i].className === "key-image-playing") {
-            imgArray[i].classList.remove("key-image-playing")
+        if (imgArray[i].className === "key-image key-image-playing") {
+            imgArray[i].classList.remove("key-image-playing");
         } 
     }
 }
