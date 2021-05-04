@@ -2,7 +2,9 @@
         <div class="container-footer-links">
             <a href="/">Home</a>
             <a href="/about">About</a>
+            <% if (signedIn === true) { %>
             <a href="/inventory">Inventory</a>
+            <% } %>
         </div>
         <p>
             Copyright &#169; The Skate Shop 
