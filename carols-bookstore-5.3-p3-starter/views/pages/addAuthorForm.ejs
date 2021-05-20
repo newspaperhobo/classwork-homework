@@ -4,22 +4,22 @@
 <form action="/authors" method="POST">
     <div>
         <label for="firstName">First Name: </label>
-        <input type="text" name="firstName" id="firstName" />
+        <input type="text" name="firstName" id="firstName" required minlength=1/>
     </div>
 
     <div>
       <label for="lastName">Last Name: </label>
-      <input type="text" name="lastName" id="lastName" />
+      <input type="text" name="lastName" id="lastName" required minlength=1 />
     </div>
 
     <div>
         <label for="birthYear">Birth Year: </label>
-        <input type="text" name="birthYear" id="birthYear" />
+        <input type="text" name="birthYear" id="birthYear" required minlength=4 />
     </div>
 
     <div>
         <label for="bio">Biography: </label>
-        <textarea name="bio" id="bio"></textarea>
+        <textarea name="bio" id="bio" required minlength=20></textarea>
     </div>
 
     <div>

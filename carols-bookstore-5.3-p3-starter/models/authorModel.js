@@ -14,7 +14,7 @@ const authorSchema = new Schema ({
         minLength: [1, 'The author\'s last name must contain 1 or more characters.']
     },
     birthYear: {
-        type: Number,
+        type: String,
         required: [true, 'The author\'s birth year is required.'],
         min: [4, '4 digit birth year is required.']
     },
